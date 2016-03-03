@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTableIdentifier" rowHeight="65" id="N2Z-an-fp7" customClass="NameAndColorCell" customModule="Table_Cells" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N2Z-an-fp7" id="S1s-cc-OhM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" ambiguous="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGO-VP-vqJ">
+                        <rect key="frame" x="8" y="8" width="49" height="22"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" ambiguous="YES" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAw-WP-LrZ">
+                        <rect key="frame" x="12" y="36" width="49" height="20"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfS-RK-295">
+                        <rect key="frame" x="70" y="9" width="242" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iny-aT-wQT">
+                        <rect key="frame" x="74" y="35" width="238" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MGO-VP-vqJ" firstAttribute="baseline" secondItem="NfS-RK-295" secondAttribute="baseline" id="3Kp-5A-Y2Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NfS-RK-295" secondAttribute="trailing" id="7vz-UC-z3B"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HAw-WP-LrZ" secondAttribute="bottom" id="Ajb-rg-kbB"/>
+                    <constraint firstItem="NfS-RK-295" firstAttribute="leading" secondItem="MGO-VP-vqJ" secondAttribute="trailing" constant="13" id="DKu-lO-0Qj"/>
+                    <constraint firstItem="Iny-aT-wQT" firstAttribute="leading" secondItem="HAw-WP-LrZ" secondAttribute="trailing" constant="13" id="Kw5-mY-VvT"/>
+                    <constraint firstItem="HAw-WP-LrZ" firstAttribute="baseline" secondItem="Iny-aT-wQT" secondAttribute="baseline" id="Q5d-eX-s5x"/>
+                    <constraint firstItem="HAw-WP-LrZ" firstAttribute="top" secondItem="MGO-VP-vqJ" secondAttribute="bottom" constant="6" id="b95-BA-mYY"/>
+                    <constraint firstItem="HAw-WP-LrZ" firstAttribute="width" secondItem="MGO-VP-vqJ" secondAttribute="width" id="gch-nb-obt"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="MGO-VP-vqJ" secondAttribute="leading" id="iWN-aN-ceT"/>
+                    <constraint firstAttribute="topMargin" secondItem="MGO-VP-vqJ" secondAttribute="top" id="kES-YI-2Ch"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Iny-aT-wQT" secondAttribute="trailing" id="o8K-5b-2co"/>
+                    <constraint firstItem="HAw-WP-LrZ" firstAttribute="leading" secondItem="S1s-cc-OhM" secondAttribute="leadingMargin" constant="4" id="xhf-60-zLs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colorLabel" destination="Iny-aT-wQT" id="i3q-TS-o9C"/>
+                <outlet property="nameLabel" destination="NfS-RK-295" id="gvq-dn-NYT"/>
+            </connections>
+            <point key="canvasLocation" x="418" y="340.5"/>
+        </tableViewCell>
+    </objects>
+</document>
